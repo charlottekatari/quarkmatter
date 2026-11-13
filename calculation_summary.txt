@@ -1,0 +1,44 @@
+MAN — SLy4 and massless u,d,s MIT Bag thermodynamic exploration
+All units: MeV, fm. Broot=B^(1/4) in MeV.
+Model: T=0, 3 massless quark flavors, no interactions, constant B, beta equilibrium, local neutrality.
+P_Q=muB^4/[108 pi^2 (hbar c)^3]-B; epsilon_Q=3 P_Q+4 B; nB_Q=dP_Q/dmuB.
+No TOV or stellar stability calculations have been performed.
+
+Hadronic audit
+{
+  "n_points": 197,
+  "max_abs_euler_relative": 0.0001128759195874349,
+  "median_abs_euler_relative": 2.9327354865124796e-05,
+  "max_abs_dedn_relative": 0.0031588459696317056,
+  "median_abs_dedn_relative": 3.2043784160212944e-05,
+  "max_abs_dPdmu_relative": 0.18144807567266333,
+  "median_abs_dPdmu_relative": 0.00432645947211005,
+  "hadronic_mu_interval_MeV": [
+    930.9770468995112,
+    2042.0110390478
+  ],
+  "note": "Numerical derivatives of a finite grid are sensitive to endpoints and local changes in slope."
+}
+
+Quark parameters
+ B_root_MeV  B_MeV_fm^-3  muB_at_P_zero_MeV  epsilon_at_P_zero_MeV_fm^-3  nB_at_P_zero_fm^-3  cs_squared_over_c_squared  max_relative_euler_identity_error  median_relative_numerical_dP_dmu_error
+        145    57.532414         828.512142                   230.129657            0.277763                   0.333333                                0.0                            4.200000e-07
+        155    75.122042         885.650910                   300.488166            0.339285                   0.333333                                0.0                            3.700000e-07
+        165    96.466466         942.789679                   385.865862            0.409281                   0.333333                                0.0                            3.200000e-07
+        175   122.065458         999.928447                   488.261831            0.488297                   0.333333                                0.0                            2.800000e-07
+        185   152.450026        1057.067216                   609.800105            0.576879                   0.333333                                0.0                            2.400000e-07
+        190   169.611382        1085.636600                   678.445529            0.624929                   0.333333                                0.0                            2.200000e-07
+
+Maxwell crossings
+ B_root_MeV  B_MeV_fm^-3  transition_in_table                                                                    status  muB_transition_MeV  P_transition_MeV_fm^-3  nB_hadronic_fm^-3  nB_quark_fm^-3  epsilon_hadronic_MeV_fm^-3  epsilon_quark_MeV_fm^-3  delta_epsilon_MeV_fm^-3  delta_epsilon_over_epsilon_H
+        145    57.532414                False             Quark pressure exceeds hadronic pressure at all tabulated muB                 NaN                     NaN                NaN             NaN                         NaN                      NaN                      NaN                           NaN
+        155    75.122042                False             Quark pressure exceeds hadronic pressure at all tabulated muB                 NaN                     NaN                NaN             NaN                         NaN                      NaN                      NaN                           NaN
+        165    96.466466                 True Candidate hadron-to-quark Maxwell crossing (NOT a stellar stability test)          942.804065                0.005888           0.004136        0.409300                    3.893264               385.883526               381.990262                     98.115679
+        175   122.065458                 True Candidate hadron-to-quark Maxwell crossing (NOT a stellar stability test)         1039.899244               20.719395           0.335171        0.549226                  327.828537               550.420017               222.591480                      0.678988
+        185   152.450026                 True Candidate hadron-to-quark Maxwell crossing (NOT a stellar stability test)         1173.392256               79.017441           0.525312        0.789054                  537.383847               846.852428               309.468581                      0.575880
+        190   169.611382                 True Candidate hadron-to-quark Maxwell crossing (NOT a stellar stability test)         1232.267931              111.927041           0.591571        0.913887                  617.054301              1014.226652               397.172351                      0.643659
+
+No crossing for 145 and 155 MeV within the tabulated hadronic muB interval.
+For these values quark matter has higher pressure than SLy4 at all tested muB.
+The graph may show negative-pressure mathematical continuations: physical quark CSV restricts P>=0.
+Candidate crossings must NOT be interpreted as proof of stable hybrid-star configurations.

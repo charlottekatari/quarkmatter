@@ -1,0 +1,27 @@
+{
+  "hbar_c_MeV_fm": 197.3269804,
+  "B_root_values_MeV": [
+    145,
+    155,
+    165,
+    175,
+    185,
+    190
+  ],
+  "eos_model": "RG(SLy4), CompOSE #134",
+  "model_approximations": "cold massless u,d,s free quarks, no finite strange mass, no pQCD corrections, constant B",
+  "checks": {
+    "n_points": 197,
+    "max_abs_euler_relative": 0.0001128759195874349,
+    "median_abs_euler_relative": 2.9327354865124796e-05,
+    "max_abs_dedn_relative": 0.0031588459696317056,
+    "median_abs_dedn_relative": 3.2043784160212944e-05,
+    "max_abs_dPdmu_relative": 0.18144807567266333,
+    "median_abs_dPdmu_relative": 0.00432645947211005,
+    "hadronic_mu_interval_MeV": [
+      930.9770468995112,
+      2042.0110390478
+    ],
+    "note": "Numerical derivatives of a finite grid are sensitive to endpoints and local changes in slope."
+  }
+}

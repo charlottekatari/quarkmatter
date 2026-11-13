@@ -1,0 +1,29 @@
+{
+  "conversion": 1.3238333135663827e-06,
+  "solar_mass_in_km": 1.4766696910334391,
+  "table_pressure_min": 2.143249e-08,
+  "table_pressure_max": 863.806658,
+  "pure_hadronic_maximum_mass_Msun": 2.050267331731817,
+  "pure_hadronic_R14_km": 11.686751304192944,
+  "reference_CompOSE_Mmax_Msun": 2.06,
+  "reference_CompOSE_R14_km": 11.7,
+  "rtol": 1.4e-07,
+  "max_step_km": 0.6,
+  "surface_test": [
+    {
+      "Pstop_over_Pmin": 1,
+      "R_km": 11.680858154302301,
+      "M_solar": 1.4100245415723
+    },
+    {
+      "Pstop_over_Pmin": 3,
+      "R_km": 11.66854975114101,
+      "M_solar": 1.4100245388021913
+    },
+    {
+      "Pstop_over_Pmin": 10,
+      "R_km": 11.65057458184781,
+      "M_solar": 1.410024529166759
+    }
+  ]
+}

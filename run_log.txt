@@ -1,0 +1,38 @@
+Conversions: 1 MeV/fm^3 -> 1.323833314e-06 km^-2; 1 Msun -> 1.476669691 km
+Surface defined by P_min = 2.143249e-08 MeV/fm^3
+Hadronic baseline max 2.050267 Msun, R14 11.686751 km
+Broot=165, Pt=0.00589, onsetM=0.6025, Seidov 98.1158 vs 0.5023, Mmax of hybrid samples 1.54855, extrema [{'Pc': 1.809738023108805, 'M_solar': 0.8135649554887836, 'kind': 'maximum'}, {'Pc': 2.724418934271105, 'M_solar': 0.023014447313195664, 'kind': 'minimum'}, {'Pc': 501.66715628806026, 'M_solar': 1.5485462015731208, 'kind': 'maximum'}]
+Broot=175, Pt=20.71940, onsetM=0.7108, Seidov 0.6790 vs 0.5948, Mmax of hybrid samples 1.40239, extrema [{'Pc': 25.899244203364795, 'M_solar': 0.7064646680849528, 'kind': 'minimum'}, {'Pc': 576.3748412747868, 'M_solar': 1.4023903907717907, 'kind': 'maximum'}]
+Broot=185, Pt=79.01744, onsetM=1.3643, Seidov 0.5759 vs 0.7206, Mmax of hybrid samples 1.38935, extrema [{'Pc': 81.38796441886538, 'M_solar': 1.364770790800768, 'kind': 'maximum'}, {'Pc': 133.6617060674359, 'M_solar': 1.3562079987684839, 'kind': 'minimum'}, {'Pc': 423.91317467746046, 'M_solar': 1.3893488365836903, 'kind': 'maximum'}]
+Broot=190, Pt=111.92704, onsetM=1.5373, Seidov 0.6437 vs 0.7721, Mmax of hybrid samples 1.53736, extrema [{'Pc': 113.04631152455511, 'M_solar': 1.5373578246974369, 'kind': 'maximum'}]
+Numerical validation {
+  "conversion": 1.3238333135663827e-06,
+  "solar_mass_in_km": 1.4766696910334391,
+  "table_pressure_min": 2.143249e-08,
+  "table_pressure_max": 863.806658,
+  "pure_hadronic_maximum_mass_Msun": 2.050267331731817,
+  "pure_hadronic_R14_km": 11.686751304192944,
+  "reference_CompOSE_Mmax_Msun": 2.06,
+  "reference_CompOSE_R14_km": 11.7,
+  "rtol": 1.4e-07,
+  "max_step_km": 0.6,
+  "surface_test": [
+    {
+      "Pstop_over_Pmin": 1,
+      "R_km": 11.680858154302301,
+      "M_solar": 1.4100245415723
+    },
+    {
+      "Pstop_over_Pmin": 3,
+      "R_km": 11.66854975114101,
+      "M_solar": 1.4100245388021913
+    },
+    {
+      "Pstop_over_Pmin": 10,
+      "R_km": 11.65057458184781,
+      "M_solar": 1.410024529166759
+    }
+  ]
+}
+
+Results at: /mnt/data/stage3_results
