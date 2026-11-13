@@ -1,0 +1,34 @@
+THERMODYNAMIC VALIDATION: {
+  "n_points": 197,
+  "max_abs_euler_relative": 0.0001128759195874349,
+  "median_abs_euler_relative": 2.9327354865124796e-05,
+  "max_abs_dedn_relative": 0.0031588459696317056,
+  "median_abs_dedn_relative": 3.2043784160212944e-05,
+  "max_abs_dPdmu_relative": 0.18144807567266333,
+  "median_abs_dPdmu_relative": 0.00432645947211005,
+  "hadronic_mu_interval_MeV": [
+    930.9770468995112,
+    2042.0110390478
+  ],
+  "note": "Numerical derivatives of a finite grid are sensitive to endpoints and local changes in slope."
+}
+
+QUARK PARAMETERS:
+ B_root_MeV  B_MeV_fm^-3  muB_at_P_zero_MeV  nB_at_P_zero_fm^-3
+        145      57.5324           828.5121              0.2778
+        155      75.1220           885.6509              0.3393
+        165      96.4665           942.7897              0.4093
+        175     122.0655           999.9284              0.4883
+        185     152.4500          1057.0672              0.5769
+        190     169.6114          1085.6366              0.6249
+
+MAXWELL CANDIDATES:
+ B_root_MeV  transition_in_table  muB_transition_MeV  P_transition_MeV_fm^-3  delta_epsilon_MeV_fm^-3
+        145                False                 NaN                     NaN                      NaN
+        155                False                 NaN                     NaN                      NaN
+        165                 True           942.80406                 0.00589                381.99026
+        175                 True          1039.89924                20.71940                222.59148
+        185                 True          1173.39226                79.01744                309.46858
+        190                 True          1232.26793               111.92704                397.17235
+
+OUTPUT: /mnt/data/stage2_results
